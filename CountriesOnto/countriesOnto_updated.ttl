@@ -585,21 +585,21 @@ ex:Yellow_Sea rdf:type owl:NamedIndividual ,
 ex:empire_state_building rdf:type owl:NamedIndividual ,
                                   ex:Landmark ;
                          ex:address "Central Park, New York" ;
-                         ex:hasYearBuilt 1857 .
+                         ex:hasYearBuilt "1857 A" .
 
 
 ###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#national_musuem_of_egypt
 ex:national_musuem_of_egypt rdf:type owl:NamedIndividual ,
                                      ex:Landmark ;
                             ex:address "Giza, Egypt" ;
-                            ex:hasYearBuilt 1990 .
+                            ex:hasYearBuilt "1990 A" .
 
 
 ###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#oriental_pearl_tower
 ex:oriental_pearl_tower rdf:type owl:NamedIndividual ,
                                  ex:Landmark ;
                         ex:address "1 Century Ave, LuJiaZui, Pudong Xinqu" ;
-                        ex:hasYearBuilt 1900 .
+                        ex:hasYearBuilt "1900 A" .
 
 
 ###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#the_great_sphinks
@@ -613,7 +613,7 @@ ex:the_great_sphinks rdf:type owl:NamedIndividual ,
 ex:times_square rdf:type owl:NamedIndividual ,
                          ex:Landmark ;
                 ex:address "7th Avenue, New York" ;
-                ex:hasYearBuilt 1900 .
+                ex:hasYearBuilt "1900 A" .
 
 
 ###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#10000000
