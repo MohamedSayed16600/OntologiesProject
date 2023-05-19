@@ -1,0 +1,263 @@
+@prefix : <http://www.semanticweb.org/reemk/ontologies/countriesOnto#> .
+@prefix ex: <http://www.semanticweb.org/reemk/ontologies/countriesOnto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/reemk/ontologies/countriesOnto> .
+
+<http://www.semanticweb.org/reemk/ontologies/countriesOnto> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#hasCity
+ex:hasCity rdf:type owl:ObjectProperty ;
+           rdfs:domain ex:Country ;
+           rdfs:range ex:City .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#hasGovernmentType
+ex:hasGovernmentType rdf:type owl:ObjectProperty ;
+                     rdfs:domain ex:Country ;
+                     rdfs:range ex:GovernmentType .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#hasImmigrants
+ex:hasImmigrants rdf:type owl:ObjectProperty ;
+                 rdfs:domain ex:Country ;
+                 rdfs:range ex:Immigrant .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#hasLandmark
+ex:hasLandmark rdf:type owl:ObjectProperty ;
+               rdfs:domain ex:City ;
+               rdfs:range ex:Landmark .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#hasNativeResidents
+ex:hasNativeResidents rdf:type owl:ObjectProperty ;
+                      rdfs:domain ex:Country ;
+                      rdfs:range ex:Native .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#hasRuler
+ex:hasRuler rdf:type owl:ObjectProperty ;
+            rdfs:domain ex:Country ;
+            rdfs:range ex:Ruler .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#isCapitalOf
+ex:isCapitalOf rdf:type owl:ObjectProperty ;
+               rdfs:domain ex:Capital ;
+               rdfs:range ex:Country .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#isInContinent
+ex:isInContinent rdf:type owl:ObjectProperty ;
+                 rdfs:domain ex:Country .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#isSurroundedBy
+ex:isSurroundedBy rdf:type owl:ObjectProperty ;
+                  rdfs:domain ex:Country ;
+                  rdfs:range ex:SurroundingWater .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#address
+ex:address rdf:type owl:DatatypeProperty ;
+           rdfs:domain ex:Landmark ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#hasYearBuilt
+ex:hasYearBuilt rdf:type owl:DatatypeProperty ;
+                rdfs:domain ex:Landmark ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#rulertype
+ex:rulertype rdf:type owl:DatatypeProperty ;
+             rdfs:domain ex:Ruler ;
+             rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#watertype
+ex:watertype rdf:type owl:DatatypeProperty ;
+             rdfs:domain ex:SurroundingWater ;
+             rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Capital
+ex:Capital rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty ex:isCapitalOf ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass ex:Country
+                               ] ;
+           rdfs:subClassOf ex:Country .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Citizen
+ex:Citizen rdf:type owl:Class ;
+           rdfs:subClassOf ex:Person .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#City
+ex:City rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty ex:hasLandmark ;
+                              owl:maxQualifiedCardinality "3"^^xsd:nonNegativeInteger ;
+                              owl:onClass ex:Landmark
+                            ] ;
+        rdfs:subClassOf ex:Country .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Continent
+ex:Continent rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Country
+ex:Country rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty ex:hasGovernmentType ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass ex:GovernmentType
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty ex:hasRuler ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass ex:Ruler
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty ex:isInContinent ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass ex:Continent
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty ex:isSurroundedBy ;
+                                 owl:maxQualifiedCardinality "4"^^xsd:nonNegativeInteger ;
+                                 owl:onClass ex:SurroundingWater
+                               ] .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#GovernmentType
+ex:GovernmentType rdf:type owl:Class ;
+                  rdfs:subClassOf ex:Country .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Immigrant
+ex:Immigrant rdf:type owl:Class ;
+             rdfs:subClassOf ex:Citizen .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Landmark
+ex:Landmark rdf:type owl:Class ;
+            rdfs:subClassOf ex:City .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Native
+ex:Native rdf:type owl:Class ;
+          rdfs:subClassOf ex:Citizen .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Person
+ex:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Ruler
+ex:Ruler rdf:type owl:Class ;
+         rdfs:subClassOf ex:Person .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#SurroundingWater
+ex:SurroundingWater rdf:type owl:Class ;
+                    rdfs:subClassOf ex:Country .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Abdel_Fattah_el-Sisi
+ex:Abdel_Fattah_el-Sisi rdf:type owl:NamedIndividual ,
+                                 ex:Ruler ;
+                        ex:rulertype "President" .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Africa
+ex:Africa rdf:type owl:NamedIndividual ,
+                   ex:Continent .
+
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Cairo
+ex:Cairo rdf:type owl:NamedIndividual ,
+                  ex:Capital ;
+         ex:isCapitalOf ex:Egypt .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Egypt
+ex:Egypt rdf:type owl:NamedIndividual ,
+                  ex:Country ;
+         ex:hasCity ex:Giza ;
+         ex:hasGovernmentType ex:Republic ;
+         ex:hasImmigrants <http://www.semanticweb.org/reemk/ontologies/countriesOnto#700> ;
+         ex:hasNativeResidents <http://www.semanticweb.org/reemk/ontologies/countriesOnto#5462700> ;
+         ex:hasRuler ex:Abdel_Fattah_el-Sisi ;
+         ex:isInContinent ex:Africa ;
+         ex:isSurroundedBy ex:Red_Sea .
+
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Giza
+ex:Giza rdf:type owl:NamedIndividual ,
+                 ex:City ;
+        ex:hasLandmark ex:The_Great_Pyramids .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Red_Sea
+ex:Red_Sea rdf:type owl:NamedIndividual ,
+                    ex:SurroundingWater ;
+           ex:watertype "sea" .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#Republic
+ex:Republic rdf:type owl:NamedIndividual ,
+                     ex:GovernmentType .
+
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#The_Great_Pyramids
+ex:The_Great_Pyramids rdf:type owl:NamedIndividual ,
+                               ex:Landmark ;
+                      ex:address """Al Haram, Nazlet El-Semman
+Giza Governorate
+Egypt""" ;
+                      ex:hasYearBuilt "2560 BCE" .
+
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#5462700
+<http://www.semanticweb.org/reemk/ontologies/countriesOnto#5462700> rdf:type owl:NamedIndividual ,
+                                                                             ex:Native .
+
+
+###  http://www.semanticweb.org/reemk/ontologies/countriesOnto#700
+<http://www.semanticweb.org/reemk/ontologies/countriesOnto#700> rdf:type owl:NamedIndividual ,
+                                                                         ex:Immigrant .
+
+
+
+
+###  Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi
