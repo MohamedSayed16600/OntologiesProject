@@ -1,0 +1,1394 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/reemk/ontologies/countriesOnto"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/reemk/ontologies/countriesOnto">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="ex" IRI="http://www.semanticweb.org/reemk/ontologies/countriesOnto#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Capital"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GovernmentType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Immigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Landmark"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Native"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ruler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurroundingWater"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasImmigrants"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLandmark"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRuler"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCapitalOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInContinent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#address"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPopulation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYearBuilt"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rulertype"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#watertype"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Abdel_Fattah_el-Sisi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Africa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Angela_Merkel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Arabian_Sea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Atlantic_Ocean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Australia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Baltic_Sea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bay_of_Biscay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beijing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Berlin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brandenburg_Gate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cairo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Canberra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Communist_Party-led_State"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Democracy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Egypt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eiffel_Tower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elizabeth_II"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emmanuel_Macron"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#English_Channel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Federal_Parliamentary_Constitutional_Monarchy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Federal_Parliamentary_Democratic_Republic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Federal_Republic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#France"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Germany"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Giza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Great_Wall_of_China"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hamburg"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#India"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Joe_Biden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Marseille"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mediterranean_Sea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mumbai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#New_Delhi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#New_York"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#North_America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#North_Sea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Oceania"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pacific_Ocean"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Paris"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ram_Nath_Kovind"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red_Sea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Republic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Semi-Presidential_Republic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shanghai"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#South_America"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Statue_of_Liberty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sydney"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sydney_Opera_House"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Taj_Mahal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Great_Pyramids"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_States"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Washington_DC"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Xi_Jinping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yellow_Sea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#empire_state_building"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#national_musuem_of_egypt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#oriental_pearl_tower"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#the_great_sphinks"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#times_square"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10000000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#300"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#400"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#400000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#450"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#500"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5000000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#5462700"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#600000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#670000"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#700"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#900000"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Capital"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isCapitalOf"/>
+            <Class IRI="#Country"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#City"/>
+        <ObjectMaxCardinality cardinality="3">
+            <ObjectProperty IRI="#hasLandmark"/>
+            <Class IRI="#Landmark"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasGovernmentType"/>
+            <Class IRI="#GovernmentType"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRuler"/>
+            <Class IRI="#Ruler"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isInContinent"/>
+            <Class IRI="#Continent"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Country"/>
+        <ObjectMaxCardinality cardinality="4">
+            <ObjectProperty IRI="#isSurroundedBy"/>
+            <Class IRI="#SurroundingWater"/>
+        </ObjectMaxCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Capital"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citizen"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GovernmentType"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Immigrant"/>
+        <Class IRI="#Citizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Landmark"/>
+        <Class IRI="#City"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Native"/>
+        <Class IRI="#Citizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ruler"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurroundingWater"/>
+        <Class IRI="#Country"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Ruler"/>
+        <NamedIndividual IRI="#Abdel_Fattah_el-Sisi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ruler"/>
+        <NamedIndividual IRI="#Angela_Merkel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Arabian_Sea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Asia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Atlantic_Ocean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Baltic_Sea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Bay_of_Biscay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Capital"/>
+        <NamedIndividual IRI="#Beijing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Capital"/>
+        <NamedIndividual IRI="#Berlin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#Brandenburg_Gate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Capital"/>
+        <NamedIndividual IRI="#Cairo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Capital"/>
+        <NamedIndividual IRI="#Canberra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentType"/>
+        <NamedIndividual IRI="#Communist_Party-led_State"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentType"/>
+        <NamedIndividual IRI="#Democracy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Egypt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#Eiffel_Tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ruler"/>
+        <NamedIndividual IRI="#Elizabeth_II"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ruler"/>
+        <NamedIndividual IRI="#Emmanuel_Macron"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentType"/>
+        <NamedIndividual IRI="#Federal_Parliamentary_Constitutional_Monarchy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentType"/>
+        <NamedIndividual IRI="#Federal_Parliamentary_Democratic_Republic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentType"/>
+        <NamedIndividual IRI="#Federal_Republic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#France"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Giza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#Great_Wall_of_China"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Hamburg"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#India"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ruler"/>
+        <NamedIndividual IRI="#Joe_Biden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Marseille"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Mediterranean_Sea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Mumbai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Capital"/>
+        <NamedIndividual IRI="#New_Delhi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#New_York"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#North_America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#North_Sea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#Oceania"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Pacific_Ocean"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Capital"/>
+        <NamedIndividual IRI="#Paris"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ruler"/>
+        <NamedIndividual IRI="#Ram_Nath_Kovind"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Red_Sea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentType"/>
+        <NamedIndividual IRI="#Republic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GovernmentType"/>
+        <NamedIndividual IRI="#Semi-Presidential_Republic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Shanghai"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Continent"/>
+        <NamedIndividual IRI="#South_America"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#Statue_of_Liberty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#City"/>
+        <NamedIndividual IRI="#Sydney"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#Sydney_Opera_House"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#Taj_Mahal"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#The_Great_Pyramids"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#United_States"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Capital"/>
+        <NamedIndividual IRI="#Washington_DC"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ruler"/>
+        <NamedIndividual IRI="#Xi_Jinping"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurroundingWater"/>
+        <NamedIndividual IRI="#Yellow_Sea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#empire_state_building"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#national_musuem_of_egypt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#oriental_pearl_tower"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#the_great_sphinks"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Landmark"/>
+        <NamedIndividual IRI="#times_square"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Native"/>
+        <NamedIndividual IRI="#10000000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Immigrant"/>
+        <NamedIndividual IRI="#102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Immigrant"/>
+        <NamedIndividual IRI="#300"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Immigrant"/>
+        <NamedIndividual IRI="#400"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Native"/>
+        <NamedIndividual IRI="#400000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Immigrant"/>
+        <NamedIndividual IRI="#450"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Immigrant"/>
+        <NamedIndividual IRI="#500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Native"/>
+        <NamedIndividual IRI="#5000000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Native"/>
+        <NamedIndividual IRI="#5462700"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Native"/>
+        <NamedIndividual IRI="#600000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Native"/>
+        <NamedIndividual IRI="#670000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Immigrant"/>
+        <NamedIndividual IRI="#700"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Native"/>
+        <NamedIndividual IRI="#900000"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#Sydney"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#Federal_Parliamentary_Constitutional_Monarchy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#300"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#600000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRuler"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#Elizabeth_II"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#Australia"/>
+        <NamedIndividual IRI="#Oceania"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <NamedIndividual IRI="#Beijing"/>
+        <NamedIndividual IRI="#China"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <NamedIndividual IRI="#Berlin"/>
+        <NamedIndividual IRI="#Germany"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <NamedIndividual IRI="#Cairo"/>
+        <NamedIndividual IRI="#Egypt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <NamedIndividual IRI="#Canberra"/>
+        <NamedIndividual IRI="#Australia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#China"/>
+        <NamedIndividual IRI="#Shanghai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <NamedIndividual IRI="#China"/>
+        <NamedIndividual IRI="#Communist_Party-led_State"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <NamedIndividual IRI="#China"/>
+        <NamedIndividual IRI="#450"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <NamedIndividual IRI="#China"/>
+        <NamedIndividual IRI="#900000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRuler"/>
+        <NamedIndividual IRI="#China"/>
+        <NamedIndividual IRI="#Xi_Jinping"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#China"/>
+        <NamedIndividual IRI="#Asia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#Giza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#Republic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#700"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#5462700"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRuler"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#Abdel_Fattah_el-Sisi"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#Africa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#Mediterranean_Sea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <NamedIndividual IRI="#Red_Sea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Marseille"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Semi-Presidential_Republic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#400000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRuler"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Emmanuel_Macron"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Bay_of_Biscay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#English_Channel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#France"/>
+        <NamedIndividual IRI="#Mediterranean_Sea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#Hamburg"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#Federal_Republic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#10000000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRuler"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#Angela_Merkel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#Europe"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#Baltic_Sea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#Germany"/>
+        <NamedIndividual IRI="#North_Sea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Giza"/>
+        <NamedIndividual IRI="#The_Great_Pyramids"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Giza"/>
+        <NamedIndividual IRI="#national_musuem_of_egypt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Giza"/>
+        <NamedIndividual IRI="#the_great_sphinks"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Hamburg"/>
+        <NamedIndividual IRI="#Brandenburg_Gate"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#India"/>
+        <NamedIndividual IRI="#Mumbai"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <NamedIndividual IRI="#India"/>
+        <NamedIndividual IRI="#Federal_Parliamentary_Democratic_Republic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <NamedIndividual IRI="#India"/>
+        <NamedIndividual IRI="#450"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <NamedIndividual IRI="#India"/>
+        <NamedIndividual IRI="#670000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRuler"/>
+        <NamedIndividual IRI="#India"/>
+        <NamedIndividual IRI="#Ram_Nath_Kovind"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#India"/>
+        <NamedIndividual IRI="#Asia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#India"/>
+        <NamedIndividual IRI="#Arabian_Sea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Marseille"/>
+        <NamedIndividual IRI="#Eiffel_Tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Mumbai"/>
+        <NamedIndividual IRI="#Taj_Mahal"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <NamedIndividual IRI="#New_Delhi"/>
+        <NamedIndividual IRI="#India"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#New_York"/>
+        <NamedIndividual IRI="#Statue_of_Liberty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#New_York"/>
+        <NamedIndividual IRI="#times_square"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <NamedIndividual IRI="#Paris"/>
+        <NamedIndividual IRI="#France"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#Great_Wall_of_China"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Shanghai"/>
+        <NamedIndividual IRI="#oriental_pearl_tower"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <NamedIndividual IRI="#Sydney"/>
+        <NamedIndividual IRI="#Sydney_Opera_House"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCity"/>
+        <NamedIndividual IRI="#United_States"/>
+        <NamedIndividual IRI="#New_York"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <NamedIndividual IRI="#United_States"/>
+        <NamedIndividual IRI="#Democracy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <NamedIndividual IRI="#United_States"/>
+        <NamedIndividual IRI="#700"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <NamedIndividual IRI="#United_States"/>
+        <NamedIndividual IRI="#5000000"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRuler"/>
+        <NamedIndividual IRI="#United_States"/>
+        <NamedIndividual IRI="#Joe_Biden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isInContinent"/>
+        <NamedIndividual IRI="#United_States"/>
+        <NamedIndividual IRI="#North_America"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <NamedIndividual IRI="#United_States"/>
+        <NamedIndividual IRI="#Atlantic_Ocean"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <NamedIndividual IRI="#Washington_DC"/>
+        <NamedIndividual IRI="#United_States"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rulertype"/>
+        <NamedIndividual IRI="#Abdel_Fattah_el-Sisi"/>
+        <Literal>President</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rulertype"/>
+        <NamedIndividual IRI="#Angela_Merkel"/>
+        <Literal>Chancellor</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Arabian_Sea"/>
+        <Literal>sea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Atlantic_Ocean"/>
+        <Literal>ocean</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Australia"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">25000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Baltic_Sea"/>
+        <Literal>sea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Bay_of_Biscay"/>
+        <Literal>bay</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Brandenburg_Gate"/>
+        <Literal>Brandenburger Tor
+Pariser Platz
+10117 Berlin
+Germany</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#Brandenburg_Gate"/>
+        <Literal>1791 CE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#China"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">1400000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Egypt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">100000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Eiffel_Tower"/>
+        <Literal>Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#Eiffel_Tower"/>
+        <Literal>1889 CE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rulertype"/>
+        <NamedIndividual IRI="#Elizabeth_II"/>
+        <Literal>Queen</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rulertype"/>
+        <NamedIndividual IRI="#Emmanuel_Macron"/>
+        <Literal>President</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#English_Channel"/>
+        <Literal>channel</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#France"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">67000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#Germany"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">83000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Great_Wall_of_China"/>
+        <Literal>Huairou, China</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#Great_Wall_of_China"/>
+        <Literal>7th century BCE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#India"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">140800000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rulertype"/>
+        <NamedIndividual IRI="#Joe_Biden"/>
+        <Literal>President</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Mediterranean_Sea"/>
+        <Literal>sea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#North_Sea"/>
+        <Literal>sea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Pacific_Ocean"/>
+        <Literal>ocean</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rulertype"/>
+        <NamedIndividual IRI="#Ram_Nath_Kovind"/>
+        <Literal>President</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Red_Sea"/>
+        <Literal>sea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Statue_of_Liberty"/>
+        <Literal>Liberty Island, New York, NY 10004, United States</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Sydney_Opera_House"/>
+        <Literal>Bennelong Point, Sydney NSW 2000, Australia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#Sydney_Opera_House"/>
+        <Literal>1973 CE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#Taj_Mahal"/>
+        <Literal>Dharmapuri, Forest Colony
+Tajganj, Agra, Uttar Pradesh 282001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#Taj_Mahal"/>
+        <Literal>1653 CE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#The_Great_Pyramids"/>
+        <Literal>Al Haram, Nazlet El-Semman
+Giza Governorate
+Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#The_Great_Pyramids"/>
+        <Literal>2560 BCE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasPopulation"/>
+        <NamedIndividual IRI="#United_States"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#unsignedLong">33190000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rulertype"/>
+        <NamedIndividual IRI="#Xi_Jinping"/>
+        <Literal>President</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#watertype"/>
+        <NamedIndividual IRI="#Yellow_Sea"/>
+        <Literal>sea</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#empire_state_building"/>
+        <Literal>Central Park, New York</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#empire_state_building"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1857</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#national_musuem_of_egypt"/>
+        <Literal>Giza, Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#national_musuem_of_egypt"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#oriental_pearl_tower"/>
+        <Literal>1 Century Ave, LuJiaZui, Pudong Xinqu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#oriental_pearl_tower"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#the_great_sphinks"/>
+        <Literal>Giza, Egypt</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#the_great_sphinks"/>
+        <Literal>2560 BCE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#address"/>
+        <NamedIndividual IRI="#times_square"/>
+        <Literal>7th Avenue, New York</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <NamedIndividual IRI="#times_square"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1900</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRuler"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <Class IRI="#Capital"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isInContinent"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCity"/>
+        <Class IRI="#City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGovernmentType"/>
+        <Class IRI="#GovernmentType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasImmigrants"/>
+        <Class IRI="#Immigrant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLandmark"/>
+        <Class IRI="#Landmark"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNativeResidents"/>
+        <Class IRI="#Native"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRuler"/>
+        <Class IRI="#Ruler"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCapitalOf"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSurroundedBy"/>
+        <Class IRI="#SurroundingWater"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#address"/>
+        <Class IRI="#Landmark"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPopulation"/>
+        <Class IRI="#Country"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <Class IRI="#Landmark"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#rulertype"/>
+        <Class IRI="#Ruler"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#watertype"/>
+        <Class IRI="#SurroundingWater"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#address"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPopulation"/>
+        <Datatype abbreviatedIRI="xsd:unsignedLong"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYearBuilt"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#rulertype"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#watertype"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
