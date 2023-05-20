@@ -1,0 +1,728 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12/"
+     xml:base="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#belongsTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasLandMark -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasLandMark">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasRuler -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasRuler">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#surroundedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#surroundedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCapital -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCapital"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCityName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCityName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasContinentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasContinentName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCountryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasCountryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasLandMarkName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasLandMarkName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasPopulation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasPopulation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedLong"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasRulerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasRulerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasWaterName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasWaterName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasYearBuilt -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#hasYearBuilt"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Map"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Abdel_Fattah_El_Sisi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Abdel_Fattah_El_Sisi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+        <untitled-ontology-12:hasRulerName>Abel Fattah El Sisi</untitled-ontology-12:hasRulerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Africa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Africa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+        <untitled-ontology-12:hasContinentName>Africa</untitled-ontology-12:hasContinentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Angela_Merkel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Angela_Merkel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+        <untitled-ontology-12:hasRulerName>Angela Merkel</untitled-ontology-12:hasRulerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Arabian_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Arabian_Sea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Arabian Sea</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Asia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Asia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+        <untitled-ontology-12:hasContinentName>Asia</untitled-ontology-12:hasContinentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Atlantic_Ocean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Atlantic_Ocean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Atlantic Ocean</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Australia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <untitled-ontology-12:belongsTo rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Australia"/>
+        <untitled-ontology-12:hasCity rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Sydney"/>
+        <untitled-ontology-12:hasRuler rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Elizabeth_II"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Pacific_Ocean"/>
+        <untitled-ontology-12:hasCapital>Canberra</untitled-ontology-12:hasCapital>
+        <untitled-ontology-12:hasCountryName>Australia</untitled-ontology-12:hasCountryName>
+        <untitled-ontology-12:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">25690000</untitled-ontology-12:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Baltic_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Baltic_Sea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Baltic Sea</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Bay_Of_Biscay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Bay_Of_Biscay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Bay Of Biscay</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Brandenburg_Gate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Brandenburg_Gate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Brandenburg Gate</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1791</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <untitled-ontology-12:belongsTo rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Asia"/>
+        <untitled-ontology-12:hasCity rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Shanghai"/>
+        <untitled-ontology-12:hasRuler rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Xi_Jinping"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Yellow_Sea"/>
+        <untitled-ontology-12:hasCapital>Beijing</untitled-ontology-12:hasCapital>
+        <untitled-ontology-12:hasCountryName>China</untitled-ontology-12:hasCountryName>
+        <untitled-ontology-12:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">1412000000</untitled-ontology-12:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Egypt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Egypt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <untitled-ontology-12:belongsTo rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Africa"/>
+        <untitled-ontology-12:hasCity rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Giza"/>
+        <untitled-ontology-12:hasRuler rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Abdel_Fattah_El_Sisi"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Mediterranean_Sea"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Red_Sea"/>
+        <untitled-ontology-12:hasCapital>Cairo</untitled-ontology-12:hasCapital>
+        <untitled-ontology-12:hasCountryName>Egypt</untitled-ontology-12:hasCountryName>
+        <untitled-ontology-12:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">110000000</untitled-ontology-12:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Eiffel_Tower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Eiffel_Tower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Eiffel Tower</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1889</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Elizabeth_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Elizabeth_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+        <untitled-ontology-12:hasRulerName>Elizabeth II</untitled-ontology-12:hasRulerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Emmanuel_Macron -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Emmanuel_Macron">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+        <untitled-ontology-12:hasRulerName>Emmanuel Macron</untitled-ontology-12:hasRulerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Empire_State_Building -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Empire_State_Building">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Empire State Building</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1857</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+        <untitled-ontology-12:hasContinentName>Europe</untitled-ontology-12:hasContinentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <untitled-ontology-12:belongsTo rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Europe"/>
+        <untitled-ontology-12:hasCity rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Marseille"/>
+        <untitled-ontology-12:hasRuler rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Emmanuel_Macron"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Mediterranean_Sea"/>
+        <untitled-ontology-12:hasCapital>Paris</untitled-ontology-12:hasCapital>
+        <untitled-ontology-12:hasCountryName>France</untitled-ontology-12:hasCountryName>
+        <untitled-ontology-12:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">67750000</untitled-ontology-12:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Germany -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Germany">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <untitled-ontology-12:belongsTo rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Europe"/>
+        <untitled-ontology-12:hasCity rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Hamburg"/>
+        <untitled-ontology-12:hasRuler rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Angela_Merkel"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#North_Sea"/>
+        <untitled-ontology-12:hasCapital>Berlin</untitled-ontology-12:hasCapital>
+        <untitled-ontology-12:hasCountryName>Germany</untitled-ontology-12:hasCountryName>
+        <untitled-ontology-12:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">83200000</untitled-ontology-12:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Giza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Giza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#The_Great_Pyramids"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#The_Great_Sphinx"/>
+        <untitled-ontology-12:hasCityName>Giza</untitled-ontology-12:hasCityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Great_Wall_Of_China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Great_Wall_Of_China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Great Wall Of China</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-700</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Hamburg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Hamburg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Brandenburg_Gate"/>
+        <untitled-ontology-12:hasCityName>Hamburg</untitled-ontology-12:hasCityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#India -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#India">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <untitled-ontology-12:belongsTo rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Asia"/>
+        <untitled-ontology-12:hasCity rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Mumbai"/>
+        <untitled-ontology-12:hasRuler rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ram_Nath_Kovind"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Arabian_Sea"/>
+        <untitled-ontology-12:hasCapital>New Delhi</untitled-ontology-12:hasCapital>
+        <untitled-ontology-12:hasCountryName>India</untitled-ontology-12:hasCountryName>
+        <untitled-ontology-12:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">1408000000</untitled-ontology-12:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Joe_Biden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Joe_Biden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+        <untitled-ontology-12:hasRulerName>Joe Biden</untitled-ontology-12:hasRulerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Marseille -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Marseille">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Eiffel_Tower"/>
+        <untitled-ontology-12:hasCityName>Marseille</untitled-ontology-12:hasCityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Mediterranean_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Mediterranean_Sea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Mediterranean Sea</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Mumbai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Mumbai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Taj_Mahal"/>
+        <untitled-ontology-12:hasCityName>Mumbai</untitled-ontology-12:hasCityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#National_Musuem_Of_Egypt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#National_Musuem_Of_Egypt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>National Musuem Of Egypt</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#New_York -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#New_York">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Statue_Of_Liberty"/>
+        <untitled-ontology-12:hasCityName>New York</untitled-ontology-12:hasCityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#North_America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#North_America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+        <untitled-ontology-12:hasContinentName>North America</untitled-ontology-12:hasContinentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#North_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#North_Sea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>North Sea</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Oceania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Oceania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+        <untitled-ontology-12:hasContinentName>Oceania</untitled-ontology-12:hasContinentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Oriental_Pearl_Tower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Oriental_Pearl_Tower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Oriental Pearl Tower</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Pacific_Ocean -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Pacific_Ocean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Pacific Ocean</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ram_Nath_Kovind -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ram_Nath_Kovind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+        <untitled-ontology-12:hasRulerName>Ram Nath Kovind</untitled-ontology-12:hasRulerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Red_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Red_Sea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Red Sea</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Shanghai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Shanghai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Great_Wall_Of_China"/>
+        <untitled-ontology-12:hasCityName>Shanghai</untitled-ontology-12:hasCityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#South_America -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#South_America">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Continent"/>
+        <untitled-ontology-12:hasContinentName>South America</untitled-ontology-12:hasContinentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Statue_Of_Liberty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Statue_Of_Liberty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Statue Of Liberty</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1876</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Sydney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Sydney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#City"/>
+        <untitled-ontology-12:hasLandMark rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Sydney_Opera_House"/>
+        <untitled-ontology-12:hasCityName>Sydney</untitled-ontology-12:hasCityName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Sydney_Opera_House -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Sydney_Opera_House">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Sydney Opera House</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1973</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Taj_Mahal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Taj_Mahal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Taj Mahal</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1653</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#The_Great_Pyramids -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#The_Great_Pyramids">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>The Great Pyramids</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-2560</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#The_Great_Sphinx -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#The_Great_Sphinx">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>The Great Sphinx</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">-2560</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Times_Square -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Times_Square">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Landmark"/>
+        <untitled-ontology-12:hasLandMarkName>Times Square</untitled-ontology-12:hasLandMarkName>
+        <untitled-ontology-12:hasYearBuilt rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1900</untitled-ontology-12:hasYearBuilt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Country"/>
+        <untitled-ontology-12:belongsTo rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#North_America"/>
+        <untitled-ontology-12:hasCity rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#New_York"/>
+        <untitled-ontology-12:surroundedBy rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Atlantic_Ocean"/>
+        <untitled-ontology-12:hasCapital>Washington DC</untitled-ontology-12:hasCapital>
+        <untitled-ontology-12:hasCountryName>USA</untitled-ontology-12:hasCountryName>
+        <untitled-ontology-12:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#unsignedLong">331900000</untitled-ontology-12:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Xi_Jinping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Xi_Jinping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Ruler"/>
+        <untitled-ontology-12:hasRulerName>Xi Jinping</untitled-ontology-12:hasRulerName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Yellow_Sea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#Yellow_Sea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lenovo/ontologies/2023/4/untitled-ontology-12#WaterBodies"/>
+        <untitled-ontology-12:hasWaterName>Yellow Sea</untitled-ontology-12:hasWaterName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
